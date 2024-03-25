@@ -10,8 +10,9 @@ import Home from './components/Home/Home';
 import Appliedjobs from './components/Appliedjobs/Appliedjobs';
 import Blog from './components/Blogs/Blog';
 import Job from './components/Job/Job';
-import Statistics from './components/Header/Statistics/Statistics';
+import Statistics from './components/Statistics/Statistics';
 import ErrorPages from './components/ErrorPage/ErrorPages';
+import JobsDetails from './components/JobsDetails/JobsDetails';
 
 const router = createBrowserRouter([
   {
@@ -38,6 +39,10 @@ const router = createBrowserRouter([
       {
         path: '/statistics',
         element: <Statistics></Statistics>
+      },
+      {
+        path: '/job/:id',
+        element: <JobsDetails></JobsDetails>
       },
      
        

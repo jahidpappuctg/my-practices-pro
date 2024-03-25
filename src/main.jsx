@@ -8,7 +8,6 @@ import {
 import Root from './components/Root';
 import Home from './components/Home/Home';
 import Appliedjobs from './components/Appliedjobs/Appliedjobs';
-import Blog from './components/Blogs/Blog';
 import Job from './components/Job/Job';
 import ErrorPages from './components/ErrorPage/ErrorPages';
 import JobsDetails from './components/JobsDetails/JobsDetails';

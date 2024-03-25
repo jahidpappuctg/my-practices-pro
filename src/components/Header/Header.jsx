@@ -1,20 +1,17 @@
 import { NavLink } from "react-router-dom";
 
 const Header = () => {
-        const links = <>
+        const links = 
+              <>
                 <li><NavLink to="/">Home</NavLink></li>
-                <li><NavLink to="/jobs">Jobs</NavLink></li>
-                <li><NavLink to="/applied">Applied Jobs</NavLink></li>
-                <li><NavLink to="/statistics">Statistics</NavLink></li>
-                <li><NavLink to="/blogs">Blogs</NavLink></li>
-
-                
-        </>
+                <li><NavLink to="/listedbooks">Listed Books</NavLink></li>
+                <li><NavLink to="/pagestoread">Pages to Read</NavLink></li> 
+              </>
   return (
     <div className="navbar bg-base-100">
       <div className="navbar-start">
         <div className="dropdown">
-          <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
+          <div tabIndex={0} role="button" className="btn btn-ghost  lg:hidden">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="h-5 w-5"
@@ -37,15 +34,16 @@ const Header = () => {
             {links}
           </ul>
         </div>
-        <a className="btn btn-ghost text-xl">daisyUI</a>
+        <a className="btn btn-ghost text-2xl">Book Bibe</a>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">
          {links}
         </ul>
       </div>
-      <div className="navbar-end">
-        <a className="btn">Button</a>
+      <div className="navbar-end gap-4">
+        <a className="btn bg-[#23BE0A] text-white">Sing In</a>
+        <a className="btn  bg-[#59C6D2] text-white">Sign Up</a>
       </div>
     </div>
   );
